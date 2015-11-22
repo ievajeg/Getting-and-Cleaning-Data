@@ -58,7 +58,7 @@ data_labels = setdiff(colnames(data), id_labels)
 melted_data <- melt(data, id = id_labels, measure.vars = data_labels)
 
 #  5.2 Create tidy data set: apply mean to dataset using dcast() function
-tidy_data <- dcast(melted_data, subject_ID+activity_ID ~ variable, mean)
+tidy_data <- dcast(melted_data, subject_ID + activity_ID + activity_label ~ variable, mean)
 
 ## Save tidy dataset using write.table() function
 write.table(tidy_data, file = "./tidy_data.txt",row.name=FALSE)
