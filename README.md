@@ -11,9 +11,9 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 Make sure you have data.table and reshape2 packages installed. Run the script "run_analysis.R", which performs the following: 
 
 # 1. Merges the training and the test sets to create one data set.
-1.a Uploads training data 
-1.b Uploads the testing data 
-1.c Merges the training and testing data sets
+* Uploads training data 
+* Uploads the testing data 
+* Merges the training and testing data sets
 
 # 2. Extracts only the measurements on the mean and standard deviation for each measurement. 
 2.a Reads features, i.e. column names for X dataset, from the file features.txt
